@@ -12,13 +12,16 @@ wget $baseurl$latest$MULTILIB_OPT$extension
 temp1 = $(grep -w "^[0-9]\{8\}" $ROOTDIR$latest$MULTILIB_OPT$extension | sed -e 's/ .*$//')
 sleep 2
 wget $baseurl$temp1
+wget 'http://distfiles.gentoo.org/releases/snapshots/current/portage-latest.tar.bz2'
+sleep 1
 tar --numeric-owner --xattrs -xvjpf stage3-*.tar.bz2 -C /mnt/gentoo
+tar -xvjf /mnt/gentoo/portage-*.tar.bz2 -C /mnt/gentoo/usr
 # Mounting and chrooting
 cp -L /etc/resolv.conf /mnt/gentoo/etc/resolv.conf
 mount -o bind /proc /mnt/gentoo/proc
 mount --rbind /dev /mnt/gentoo/dev
 # Build chroot commands
-echo "" >> install_gentoo.sh
+echo "emerge gentoo-sources" >> install_gentoo.sh
 echo "" >> install_gentoo.sh
 cp install_gentoo.sh /mnt/gentoo/
 chmod +x /mnt/gentoo/install_gentoo.sh
