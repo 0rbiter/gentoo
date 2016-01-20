@@ -9,8 +9,9 @@ latest='latest-stage3-amd64'
 extension='.txt'
 cd /mnt/gentoo
 wget $baseurl$latest$MULTILIB_OPT$extension
-temp = $(grep -w "^[0-9]\{8\}" $ROOTDIR$latest$MULTILIB_OPT$extension | sed -e 's/ .*$//')
-wget $baseurl$temp
+temp1 = $(grep -w "^[0-9]\{8\}" $ROOTDIR$latest$MULTILIB_OPT$extension | sed -e 's/ .*$//')
+sleep 2
+wget $baseurl$temp1
 tar --numeric-owner --xattrs -xvjpf stage3-*.tar.bz2 -C /mnt/gentoo
 # Mounting and chrooting
 cp -L /etc/resolv.conf /mnt/gentoo/etc/resolv.conf
