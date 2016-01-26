@@ -1,0 +1,5 @@
+net-libs/webkit-gtk-* gles2 egl
+sys-auth/polkit-* -systemd
+gnome-base/gvfs-* udisks
+sys-auth/consolekit-* policykit
+media-libs/mesa egl

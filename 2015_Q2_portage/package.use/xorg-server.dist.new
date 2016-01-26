@@ -1,0 +1,10 @@
+x11-base/xorg-server udev
+# required by gnome-base/gnome-3.14.0
+# required by gnome-base/gnome (argument)
+>=gnome-base/gvfs-1.22.3 udisks
+# required by sys-auth/polkit-0.112-r2[-systemd]
+# required by sys-fs/udisks-2.1.3
+# required by gnome-base/gvfs-1.22.3[udisks]
+# required by gnome-base/gnome-3.14.0
+# required by gnome-base/gnome (argument)
+=sys-auth/consolekit-0.4.6 policykit
