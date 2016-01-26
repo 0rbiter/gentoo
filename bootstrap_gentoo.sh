@@ -47,7 +47,7 @@ echo "emerge virtualbox-guest-additions" >> install_gentoo.sh
 #echo "emerge xf86-input-virtualbox xf86-video-virtualbox" >> install_gentoo.sh
 echo "rc-update add virtualbox-guest-additions default" >> install_gentoo.sh
 echo "/etc/init.d/virtualbox-guest-additions start" >> install_gentoo.sh
-echo "emerge pciutils usbutils hwids lshw links opensshd terminus-font diskdev_cmds lsof open-iscsi iscsi-target xz-utils ddrescue icedtea-web " >> install_gentoo.sh
+#echo "emerge pciutils usbutils hwids lshw links opensshd terminus-font diskdev_cmds lsof open-iscsi iscsi-target xz-utils ddrescue icedtea-web" >> install_gentoo.sh
 echo "rc-update add sshd default" >> install_gentoo.sh
 echo "cd /usr/src" >> install_gentoo.sh
 cp install_gentoo.sh /mnt/gentoo/
