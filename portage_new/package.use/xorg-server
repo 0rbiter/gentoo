@@ -1,0 +1,154 @@
+x11-base/xorg-server udev
+# required by sys-auth/polkit-0.112-r2[-systemd]
+# required by sys-fs/udisks-2.1.3
+# required by gnome-base/gvfs-1.22.3[udisks]
+# required by gnome-base/gnome-core-libs-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+=sys-auth/consolekit-0.4.6 policykit
+# required by net-print/cups-2.0.1-r1
+# required by net-print/cups-filters-1.0.66
+=app-text/ghostscript-gpl-9.10-r2 cups
+# required by app-misc/tracker-1.2.5
+# required by media-sound/gnome-music-3.14.3.1
+# required by gnome-base/gnome-extra-apps-3.14.0-r1[tracker]
+# required by gnome-base/gnome-3.14.0[extras]
+# required by gnome (argument)
+>=media-gfx/imagemagick-6.9.0.3 png jpeg
+# required by app-text/gnome-doc-utils-0.20.10-r1
+# required by gnome-extra/gnome-system-monitor-3.14.1
+# required by gnome-base/gnome-extra-apps-3.14.0-r1
+# required by gnome-base/gnome-3.14.0[extras]
+# required by gnome (argument)
+>=dev-libs/libxml2-2.9.2 python
+# required by gnome-base/gnome-control-center-3.14.2-r1
+# required by net-libs/gnome-online-accounts-3.14.3[gnome]
+# required by gnome-extra/gnome-contacts-3.14.2
+# required by net-im/empathy-3.12.7[gnome]
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=gnome-base/gnome-settings-daemon-3.14.2 policykit
+# required by net-misc/networkmanager-1.0.0[ppp]
+# required by gnome-extra/nm-applet-1.0.0
+# required by gnome-base/gnome-control-center-3.14.2-r1
+# required by net-libs/gnome-online-accounts-3.14.3[gnome]
+# required by gnome-extra/gnome-contacts-3.14.2
+# required by net-im/empathy-3.12.7[gnome]
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=net-dialup/ppp-2.4.7 ipv6
+# required by net-libs/webkit-gtk-2.4.8
+# required by net-im/empathy-3.12.7
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+=media-libs/harfbuzz-0.9.35 icu
+# required by media-sound/pulseaudio-5.0-r7[alsa-plugin,alsa]
+# required by net-im/empathy-3.12.7
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=media-plugins/alsa-plugins-1.0.28 pulseaudio
+# required by net-misc/networkmanager-1.0.0[wifi]
+# required by gnome-extra/nm-applet-1.0.0
+# required by gnome-base/gnome-control-center-3.14.2-r1
+# required by net-libs/gnome-online-accounts-3.14.3[gnome]
+# required by gnome-extra/gnome-contacts-3.14.2
+# required by net-im/empathy-3.12.7[gnome]
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+=net-wireless/wpa_supplicant-2.2-r1 dbus
+# required by gnome-extra/gnome-contacts-3.14.2
+# required by net-im/empathy-3.12.7[gnome]
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=dev-libs/folks-0.10.1-r1 eds
+# required by dev-libs/folks-0.10.1-r1[eds]
+# required by net-im/empathy-3.12.7
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=gnome-extra/evolution-data-server-3.12.11 vala
+# required by gnome-extra/gnome-user-share-3.14.2
+# required by gnome-base/gnome-extra-apps-3.14.0-r1
+# required by gnome-base/gnome-3.14.0[extras]
+# required by gnome (argument)
+=www-servers/apache-2.2.29 apache2_modules_auth_digest
+# required by virtual/libgudev-215-r1[-systemd]
+# required by net-im/empathy-3.12.7
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+=sys-fs/udev-216 gudev
+# required by www-client/epiphany-3.12.1
+# required by gnome-base/gnome-extra-apps-3.14.0-r1
+# required by gnome-base/gnome-3.14.0[extras]
+# required by gnome (argument)
+=net-dns/avahi-0.6.31-r6 dbus
+# required by media-gfx/gnome-photos-3.14.2
+# required by gnome-base/gnome-extra-apps-3.14.0-r1[tracker]
+# required by gnome-base/gnome-3.14.0[extras]
+# required by gnome (argument)
+>=media-plugins/grilo-plugins-0.2.13 upnp-av tracker
+# required by gnome-base/gnome-control-center-3.14.2-r1[cups]
+# required by net-libs/gnome-online-accounts-3.14.3[gnome]
+# required by gnome-extra/gnome-contacts-3.14.2
+# required by net-im/empathy-3.12.7[gnome]
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+=net-print/cups-2.0.1-r1 dbus
+# required by media-gfx/eog-3.14.3
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=x11-libs/gdk-pixbuf-2.30.8 jpeg
+# required by sys-apps/systemd-216-r3
+# required by sys-apps/gentoo-systemd-integration-4
+>=sys-apps/dbus-1.8.16 systemd
+# required by x11-wm/mutter-3.14.3[kms]
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=media-libs/clutter-1.20.0 egl
+# required by media-video/totem-3.14.2
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=media-libs/grilo-0.2.11 playlist
+# required by net-libs/webkit-gtk-2.4.8[webgl]
+# required by net-im/empathy-3.12.7
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+=x11-libs/cairo-1.12.18-r1 opengl
+# required by app-text/evince-3.14.2
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+=app-text/poppler-0.26.5 cairo
+# required by media-sound/sound-juicer-3.14.0
+# required by gnome-base/gnome-extra-apps-3.14.0-r1
+# required by gnome-base/gnome-3.14.0[extras]
+# required by gnome (argument)
+>=gnome-base/gvfs-1.22.3 cdda
+# required by gnome-base/nautilus-3.14.2-r1
+# required by gnome-extra/gnome-tweak-tool-3.14.2
+# required by gnome-base/gnome-extra-apps-3.14.0-r1
+# required by gnome-base/gnome-3.14.0[extras]
+# required by gnome (argument)
+>=dev-libs/glib-2.42.2 dbus
+# required by media-video/cheese-3.14.2
+# required by net-im/empathy-3.12.7[v4l]
+# required by gnome-base/gnome-core-apps-3.14.0
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=media-libs/gst-plugins-base-1.4.5 theora
+# required by x11-libs/libxkbcommon-0.5.0[X]
+# required by x11-wm/mutter-3.14.3
+# required by gnome-base/gnome-3.14.0
+# required by gnome (argument)
+>=x11-libs/libxcb-1.11-r1 xkb

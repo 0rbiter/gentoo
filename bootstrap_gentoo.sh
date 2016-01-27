@@ -25,9 +25,9 @@ cp -L make.conf /mnt/gentoo/etc/portage/make.conf
 echo $HOSTNAME$DOMAIN >> /mnt/gentoo/etc/resolv.conf
 echo 'de_DE ISO-8859-1' > /mnt/gentoo/etc/locale.gen
 echo 'de_DE@euro ISO-8859-15' >> /mnt/gentoo/etc/locale.gen
-echo "app-emulation/virtualbox-guest-additions ~x86" >> /mnt/gentoo/etc/portage/package.accept_keywords
-echo "x11-drivers/xf86-video-virtualbox ~x86" >> /mnt/gentoo/etc/portage/package.accept_keywords
-echo "x11-drivers/xf86-input-virtualbox ~x86" >> /mnt/gentoo/etc/portage/package.accept_keywords
+#echo "app-emulation/virtualbox-guest-additions ~x86" >> /mnt/gentoo/etc/portage/package.accept_keywords
+#echo "x11-drivers/xf86-video-virtualbox ~x86" >> /mnt/gentoo/etc/portage/package.accept_keywords
+#echo "x11-drivers/xf86-input-virtualbox ~x86" >> /mnt/gentoo/etc/portage/package.accept_keywords
 mount -o bind /proc /mnt/gentoo/proc
 mount --rbind /dev /mnt/gentoo/dev
 # Build chroot commands
@@ -47,9 +47,9 @@ echo "emerge virtualbox-guest-additions" >> install_gentoo.sh
 #echo "emerge xf86-input-virtualbox xf86-video-virtualbox" >> install_gentoo.sh
 echo "rc-update add virtualbox-guest-additions default" >> install_gentoo.sh
 echo "/etc/init.d/virtualbox-guest-additions start" >> install_gentoo.sh
-#echo "emerge pciutils usbutils hwids lshw links opensshd terminus-font diskdev_cmds lsof open-iscsi iscsi-target xz-utils ddrescue icedtea-web" >> install_gentoo.sh
+echo "emerge pciutils usbutils hwids lshw links opensshd terminus-font diskdev_cmds lsof open-iscsi iscsi-target xz-utils ddrescue icedtea-web" >> install_gentoo.sh
 echo "rc-update add sshd default" >> install_gentoo.sh
-echo "cd /usr/src" >> install_gentoo.sh
+echo "cd /usr/src/linux" >> install_gentoo.sh
 cp install_gentoo.sh /mnt/gentoo/
 chmod +x /mnt/gentoo/install_gentoo.sh
 chroot /mnt/gentoo /bin/bash install_gentoo.sh

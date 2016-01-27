@@ -1,0 +1,10 @@
+sys-kernel/vanilla-sources ~amd64
+# required by virtual/httpd-php-5.5
+# required by dev-db/phpmyadmin-4.3.12
+# required by phpmyadmin (argument)
+>=dev-lang/php-5.5.23:5.5 fpm mysqli
+# required by dev-lang/php-5.5.23
+# required by virtual/httpd-php-5.5
+# required by dev-db/phpmyadmin-4.3.12
+# required by phpmyadmin (argument)
+=app-eselect/eselect-php-0.7.1-r3 fpm
